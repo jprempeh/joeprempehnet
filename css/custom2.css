@@ -1,0 +1,39 @@
+/*
+.inner_wrapper .portfolio_item .portfolio_image img {
+	float: left;
+	width: 300px;
+	height: 300px;
+	border-radius: 150px;
+	-webkit-border-radius: 150px;
+	-moz-border-radius: 150px;
+	background: url(../img/icons/Scratch_cat_large.png) no-repeat;
+	box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+}
+
+.inner_wrapper .portfolio_item {
+	width: 960px;
+}
+
+/*.inner_wrapper .portfolio_item .portfolio_lower {
+	width: 600px;
+	float: left;
+}*/
+/*
+.portfolio_title {
+    font-size: 16px;
+    color: #696969;
+    font-weight: 700;
+    float: left;
+    width: 660px;
+    margin-top: 15px;
+    font-family: "Proxima Nova",  "Helvetica Neue",  sans-serif;
+    text-align: center;
+}
+/*
+*/
+.inner_wrapper .portfolio_item .portfolio_image .phet img {
+    width: 425px;
+    height: auto;
+}

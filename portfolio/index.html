@@ -1,0 +1,225 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<link rel="shortcut icon" href="http://joeprempeh.net/img/icons/favicon.ico" type="image/vnd.microsoft.icon" />
+<link rel="icon" href="http://joeprempeh.net/img/icons/favicon.ico" type="image/vnd.microsoft.icon" /> 
+
+<meta name="description" content="Joe Prempeh's Website">
+<meta name="robots" CONTENT="index, follow" />  
+<meta name="distribution" CONTENT="global" /> 
+<meta name="rating" CONTENT="general" />
+<meta name="copyright" CONTENT="2014, Joe Prempeh" />
+<meta name="expires" content="never" />  
+<meta name="Content-Language" CONTENT="english">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+
+<title>Joe Prempeh - Portfolio</title>
+
+
+<link href="../css/custom.css" rel="stylesheet" type="text/css" />
+<link href="../css/custom2.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+
+
+<body>
+<div class="header_outer blue">
+<div class="inner_wrapper">
+
+
+<a class="me_logo" href="http://www.joeprempeh.net/"></a>
+
+
+
+<a class="mobile_nav_icon"  href="javascript:;"></a>
+
+
+<div class="index_header">
+<h1>Here are some <strong>projects</strong> I've <br />
+recently worked on.</h1>
+</div>
+</div>
+
+
+
+
+
+</div>
+
+
+<div class="navigation_outer blue">
+<div class="inner_wrapper">
+
+    <a href="http://joeprempeh.net/" class="active">Home</a>
+    <a href="http://joeprempeh.net/portfolio">Portfolio</a>
+    <a href="http://joeprempeh.net/about">About Me</a>
+    <a href="http://joeprempeh.net/blog">Blog</a>
+
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+<div class="inner_wrapper clear">
+<div class="inner_page_heading portfolio">
+<h1>Below are some of the projects I've worked on recently. You could also add me on <a href="https://twitter.com/intent/user?screen_name=JPrempeh">twitter</a> to keep in touch.</h1>
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="inner_wrapper">
+
+<div class="span_title"> Recent Work</div>
+
+
+
+
+
+  <div class="portfolio_wrapper">
+  <div class="portfolio_loading_icon"></div>
+  
+
+<div class="portfolio_item">
+<div class="portfolio_image">
+<a href="http://vimeo.com/89678336" target=_blank>
+<img src="/../img/icons/Scratch_cat_large.png"/>
+</a>
+</div>
+<div class="portfolio_lower">
+<a href="http://vimeo.com/89678336" target=_blank>
+<p class="portfolio_title">Creating Animations with Scratch</p>
+</a>
+<p class="portfolio__sub_title">Harvard University/MIT</p>
+<p class="portfolio_text"></p>
+</div>
+</div>
+
+
+<!--<div class="portfolio_item">
+<div class="portfolio_image">
+
+<a href="http://aaalab.stanford.edu"  target=_blank>
+<img src="/../img/icons/stanford.png"/>
+</a>
+
+</div>
+
+<div class="portfolio_lower">
+
+<a href="http://aaalab.stanford.edu"  target=_blank>
+<p class="portfolio_title">AAA Lab Website</p>
+</a>
+
+<p class="portfolio__sub_title">Stanford University</p>
+</div>
+</div>-->
+
+
+
+
+
+
+
+
+<div id="portfolio_load_point_outer"></div>
+
+<a href="#"  onclick='return portfolio_load_point()' id="load_more_load_point" ></a>
+
+<script type="text/javascript">
+$(document).ready(function() {
+$('.portfolio_loading_icon').fadeIn(800);    
+});
+
+function portfolio_load_point(){ 
+$.post("http://joeprempeh.net/portfolio/update",  function(response){
+
+$('.portfolio_loading_icon').remove();    
+setTimeout("finishAjax('update', '"+escape(response)+"')", 200);
+});
+return false;
+}
+function finishAjax(id, response){
+$('.'+id).html(unescape(response));
+$('.'+id).fadeIn(3600);
+}
+</script>
+
+
+
+
+
+<div class="portfolio_loading_icon"></div>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="footer">
+<div class="social_footer_wrapper">
+<a href="http://twitter.com/jprempeh" class="twitter">Twitter</a></div>
+
+
+<div class="copyright_wrapper">© Joe Prempeh, 2014</div>
+</div>
+</div>
+
+
+</div>
+
+
+
+<script src="../js/jquery-1.8.3.min.js"></script>
+<script src="../js/waypoints.min.js"></script>
+<script src="../js/waypoints-sticky.min.js"></script>
+<!-- Custom Javascript-->
+<script src="../js/custom.js"></script>
+
+<script>
+
+
+$('#portfolio_load_point_outer').waypoint(function(direction) {
+
+$(".portfolio_loading_icon").fadeIn(200);
+
+$("#load_more_load_point").trigger('click');
+
+});
+
+</script>
+
+
+<script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
+
+</body>
+</html>
