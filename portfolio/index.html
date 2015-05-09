@@ -144,13 +144,13 @@ recently worked on.</h1>
 
 <script type="text/javascript">
 $(document).ready(function() {
-$('.portfolio_loading_icon').fadeIn(800);    
+$('.portfolio_loading_icon').fadeIn(800);
 });
 
-function portfolio_load_point(){ 
+function portfolio_load_point(){
 $.post("http://joeprempeh.net/portfolio/update",  function(response){
 
-$('.portfolio_loading_icon').remove();    
+$('.portfolio_loading_icon').remove();
 setTimeout("finishAjax('update', '"+escape(response)+"')", 200);
 });
 return false;

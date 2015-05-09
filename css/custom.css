@@ -124,22 +124,18 @@ body {
     height: 72px;
     width: 100%}
 .header_outer.green {
-    background-image: url(../images/body/light_green.png);
     background-repeat: repeat;
     background-color: #4CB87B;
 }
 .navigation_outer.green {
-    background-image: url(../images/body/dark_green.png);
     background-repeat: repeat;
     background-color: #2C9A60;
 }
 .header_outer.blue {
-    background-image: url(../images/body/light_blue.png);
     background-repeat: repeat;
     background-color: #40C3E9;
 }
 .navigation_outer.blue {
-    background-image: url(../images/body/dark_blue.png);
     background-repeat: repeat;
     background-color: #29A5CB;
 }
@@ -970,7 +966,6 @@ a.jqTransformChecked {
     position: absolute;
 }
 .inner_wrapper .portfolio_loading_icon {
-    background-image: url(../images/body/loading_icon.gif);
     background-repeat: no-repeat;
     background-position: center center;
     height: 680px;
@@ -1200,7 +1195,6 @@ a.avaliable_for_hire_button {
     padding-left: 3%}
 .form_sent_outer {
     background-color: transparent;
-    background-image: url(../images/body/light_green.png);
     background-repeat: repeat;
 }
 .portfolio_wrapper .portfolio_item .portfolio_image a {
