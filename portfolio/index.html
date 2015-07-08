@@ -13,7 +13,7 @@
 <meta name="copyright" CONTENT="2014, Joe Prempeh" />
 <meta name="expires" content="never" />  
 <meta name="Content-Language" CONTENT="english">
-<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
 
 <title>Joe Prempeh - Portfolio</title>
 
@@ -140,26 +140,8 @@ recently worked on.</h1>
 
 <div id="portfolio_load_point_outer"></div>
 
-<a href="#"  onclick='return portfolio_load_point()' id="load_more_load_point" ></a>
 
-<script type="text/javascript">
-$(document).ready(function() {
-$('.portfolio_loading_icon').fadeIn(800);
-});
 
-function portfolio_load_point(){
-$.post("http://joeprempeh.net/portfolio/update",  function(response){
-
-$('.portfolio_loading_icon').remove();
-setTimeout("finishAjax('update', '"+escape(response)+"')", 200);
-});
-return false;
-}
-function finishAjax(id, response){
-$('.'+id).html(unescape(response));
-$('.'+id).fadeIn(3600);
-}
-</script>
 
 
 

@@ -140,12 +140,12 @@ body {
     background-color: #29A5CB;
 }
 .header_outer.orange {
-    background-image: url(../images/body/light_orange.png);
+    /*background-image: url(../images/body/light_orange.png);*/
     background-repeat: repeat;
     background-color: #ED5E50;
 }
 .navigation_outer.orange {
-    background-image: url(../images/body/dark_orange.png);
+    /*background-image: url(../images/body/dark_orange.png);*/
     background-repeat: repeat;
     background-color: #D14337;
 }
@@ -607,7 +607,7 @@ button.green_button:hover, a.green_button:hover {
     padding-bottom: 25px;
     line-height: 48px;
     font-family: "Proxima Nova",  "Helvetica Neue",  sans-serif;
-    background-image: url(../images/about/about_map.png);
+    /*background-image: url(../images/about/about_map.png);*/
     background-repeat: no-repeat;
     background-position: right 40px;
 }
