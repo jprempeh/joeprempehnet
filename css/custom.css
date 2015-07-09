@@ -360,8 +360,8 @@ a.avaliable_for_hire_button:hover {
 }
 
 .inner_wrapper .portfolio_item .portfolio_image img {
-    height: 450px;
-    width: 425px;
+    height: 540px;
+    width: 944px;
 }
 .inner_wrapper .portfolio_item {
     -webkit-transition:  all 0.3s ease;
